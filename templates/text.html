@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Seed Variety Classifier</title>
+    </head>
+    
+    <body>
+        <form name="form", method="POST", style="text-align: center;">
+            <h1><strong>Wheat Seed Variety Classifier</strong></h1>
+            <br>
+            Area: <input type="number" step="0.01" name="area", placeholder="" required/>
+            <br><br>
+            Perimeter: <input type="number" step="0.01" name="perimeter", placeholder="" required/>
+            <br><br>            
+            Compactness: <input type="number" step="0.01" name="compactness", placeholder="" required/>
+            <br><br>
+            Kernel Length: <input type="number" step="0.01" name="lengthOfKernel", placeholder="" required/>
+            <br><br>
+            Kernel Width: <input type="number" step="0.01" name="widthOfKernel", placeholder="" required/>
+            <br><br>
+            Asymmetry Coefficient: <input type="number" step="0.01" name="asymmetryCoefficient", placeholder="" required/>
+            <br><br>
+            Grove Length: <input type="number" step="0.01" name="lengthOfKernelGroove", placeholder="" required/>
+            <br><br>
+
+            <button value="Submit">Identify</button>
+        </form>
+        <p style="text-align: center;">The seed variety is <strong>{{ output }}</strong></p>
+        <p style="text-align: center;">This was created by <a href="https://twitter.com/kebcuevas">@kebcuevas</a></p>
+    </body>
+</html>
